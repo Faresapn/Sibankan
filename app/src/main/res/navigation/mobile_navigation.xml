@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.distancing.sibankan.ui.HomeFragment"
+
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_donasi"
+        android:name="com.distancing.sibankan.ui.DonasikuFragment"
+        android:label="@string/donasiku"
+        tools:layout="@layout/fragment_donasiku" />
+
+    <fragment
+        android:id="@+id/navigation_plus"
+        android:name="com.distancing.sibankan.ui.MainFragment"
+        android:label="@string/donasiku"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/navigation_inbox"
+        android:name="com.distancing.sibankan.ui.InboxFragment"
+        android:label="@string/inbox"
+        tools:layout="@layout/fragment_inbox" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.distancing.sibankan.ui.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
