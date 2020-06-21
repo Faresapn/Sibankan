@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".galang_ui.GalangHalaman1"
+    android:layout_margin="24dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_back"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Hai, Sahabat Pendidikan!"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"></TextView>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Kamu ingin menggalang donasi berupa apa?"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"></TextView>
+
+    <TextView
+        android:id="@+id/textView100"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:maxWidth="300dp"
+        android:layout_marginLeft="4dp"
+        android:text="Sibankan tidak memfasilitasi penggalangan donasi untuk :"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView100">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_ellipse_20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_silang_2"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                app:layout_constraintEnd_toEndOf="@+id/imageView7"
+                app:layout_constraintStart_toStartOf="@+id/imageView7"
+                app:layout_constraintTop_toTopOf="@+id/imageView7"></ImageView>
+
+            <TextView
+                android:id="@+id/textviewfiktif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Galang donasi fiktif atau main-main"
+                app:layout_constraintStart_toEndOf="@+id/imageView7"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="16dp"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toTopOf="parent"></TextView>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="22dp"
+                android:background="#E4E4E4"
+                app:layout_constraintTop_toBottomOf="@+id/textviewfiktif"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_ellipse_20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"></ImageView>
+
+            <ImageView
+                android:id="@+id/imageView80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_silang_2"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView70"
+                app:layout_constraintEnd_toEndOf="@+id/imageView70"
+                app:layout_constraintStart_toStartOf="@+id/imageView70"
+                app:layout_constraintTop_toTopOf="@+id/imageView70"></ImageView>
+
+            <TextView
+                android:id="@+id/textviewfiktif1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Galang donasi untuk politis praktis"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView70"
+                app:layout_constraintTop_toBottomOf="@+id/view"></TextView>
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="22dp"
+                android:background="#E4E4E4"
+                app:layout_constraintTop_toBottomOf="@+id/textviewfiktif1"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView700"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_ellipse_20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view2"></ImageView>
+
+            <ImageView
+                android:id="@+id/imageView800"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_silang_2"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView700"
+                app:layout_constraintEnd_toEndOf="@+id/imageView700"
+                app:layout_constraintStart_toStartOf="@+id/imageView700"
+                app:layout_constraintTop_toTopOf="@+id/imageView700"></ImageView>
+
+            <TextView
+                android:id="@+id/textviewfiktif10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Galang donasi untuk bayar hutang pinjaman"
+                android:maxWidth="250dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                app:layout_constraintStart_toEndOf="@+id/imageView700"
+                app:layout_constraintTop_toBottomOf="@+id/view2"></TextView>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="1.0dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginHorizontal="16dp"
+                android:background="#E4E4E4"
+                app:layout_constraintTop_toBottomOf="@+id/textviewfiktif10"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView7000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_ellipse_20"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view3"></ImageView>
+
+            <ImageView
+                android:id="@+id/imageView8000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_silang_2"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView7000"
+                app:layout_constraintEnd_toEndOf="@+id/imageView7000"
+                app:layout_constraintStart_toStartOf="@+id/imageView7000"
+                app:layout_constraintTop_toTopOf="@+id/imageView7000"></ImageView>
+
+            <TextView
+                android:id="@+id/textviewfiktif1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="250dp"
+                android:text="Galang donasi untuk terorisme &amp; radikalisme"
+                android:layout_margin="16dp"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imageView7000"
+                app:layout_constraintTop_toBottomOf="@+id/view3"></TextView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

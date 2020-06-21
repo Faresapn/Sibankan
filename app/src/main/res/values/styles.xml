@@ -20,4 +20,7 @@
 
         <item name="android:background">@drawable/ic_rc_donasi</item>
     </style>
+    <style name="Buttonpressback">
+        <item name="backgroundTint">@drawable/ic_back</item>
+    </style>
 </resources>
