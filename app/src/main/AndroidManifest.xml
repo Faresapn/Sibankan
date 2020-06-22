@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".OptionActivity"></activity>
+
+        <activity android:name=".galang_ui.GalangHalaman2"></activity>
+        <activity android:name=".galang_ui.GalangActivity"></activity>
+        <activity android:name=".galang_ui.GalangHalaman1" />
+
         <activity
             android:name=".HomeActivity"
             android:label="@string/app_name"
@@ -21,7 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"></activity>
+
+        <activity android:name=".MainActivity" />
+
     </application>
 
 </manifest>
