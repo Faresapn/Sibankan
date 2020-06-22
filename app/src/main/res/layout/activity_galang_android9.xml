@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="24dp"
+    tools:context=".galang_ui.GalangAndroid9">
+
+    <TextView
+        android:id="@+id/textView1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hai, Sahabat Pendidikan!"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:layout_marginTop="96dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mau membuat kampanye ya, beri judul yang sesuai untuk penggalangan donasi kamu ya..."
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView1000"></TextView>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Contoh ''Bantu Hisyam Melanjutkan Pendidikan''"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/editText">
+
+        <Button
+            android:id="@+id/buttonsebelum1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#fff"
+            android:padding="16dp"
+            android:text="Sebelumnya"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/buttonselanjut1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:text="Selanjutnya" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Kembali ke Campaign"
+        android:clickable="true"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
