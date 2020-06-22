@@ -10,8 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".OptionActivity"></activity>
-
         <activity android:name=".galang_ui.GalangHalaman2"></activity>
         <activity android:name=".galang_ui.GalangActivity"></activity>
         <activity android:name=".galang_ui.GalangHalaman1" />
