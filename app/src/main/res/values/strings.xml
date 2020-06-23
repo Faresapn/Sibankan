@@ -9,4 +9,34 @@
     <string name="inbox">Inbox</string>
     <string name="profile">Profile</string>
     <string name="home">home</string>
+    <array name="img_verti">
+        <item>@drawable/img_one</item>
+        <item>@drawable/img_two</item>
+        <item>@drawable/img_three</item>
+        <item>@drawable/img_four</item>
+    </array>
+    <string-array name="jenis_galang">
+        <item>Donasi Uang</item>
+        <item>Donasi Uang</item>
+        <item>Donasi Barang</item>
+        <item>Donasi Uang</item>
+    </string-array>
+    <string-array name="nama_galang">
+        <item>Perbaiki Meja Kursi</item>
+        <item>Tunggakan SPP Imam</item>
+        <item>Papan Tulis SD 03 Cicau</item>
+        <item>Lanjutkan Sekolah Dio</item>
+    </string-array>
+    <string-array name="total">
+        <item>12.000.000</item>
+        <item>6.700.000</item>
+        <item>6 Barang</item>
+        <item>2.400.000</item>
+    </string-array>
+    <string-array name="sisa_waktu">
+        <item>13</item>
+        <item>4</item>
+        <item>8</item>
+        <item>16</item>
+    </string-array>
 </resources>
