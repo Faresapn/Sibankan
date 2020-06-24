@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="24dp"
-    tools:context=".galang_ui.GalangAndroid16">
+    tools:context=".galang_ui.GalangAndroid24">
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
@@ -26,14 +26,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" / 8" />
+            android:text=" / 10" />
     </LinearLayout>
     <TextView
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:text="Tentukan Kategori Penggalangan Danamu!"
+        android:text="Tentukan Kategori Penggalangan Barang-mu!"
         android:textColor="#000"
         android:textSize="18sp"
         android:maxWidth="280dp"
@@ -128,7 +128,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <Button
-            android:id="@+id/buttonsebelum16"
+            android:id="@+id/buttonsebelum24"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginRight="8dp"
@@ -139,7 +139,7 @@
             android:textColor="#000" />
 
         <Button
-            android:id="@+id/buttonselanjut16"
+            android:id="@+id/buttonselanjut24"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginLeft="8dp"
@@ -161,6 +161,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></TextView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

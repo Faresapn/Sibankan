@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="24dp"
-    tools:context=".galang_ui.GalangAndroid11">
-
+    tools:context=".galang_ui.GalangAndroid27">
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
@@ -19,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2"
+            android:text="5"
             android:textColor="#000"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -27,51 +26,89 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" / 8" />
+            android:text=" / 10" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/textView30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:text="Tentukan Link untuk Penggalangan Danamu!"
+        android:maxWidth="300dp"
+        android:text="Tentukan Bentuk Penerimaan Donasimu!"
         android:textColor="#000"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <TextView
-        android:id="@+id/textView111"
+        android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="1dp"
         android:layout_marginTop="8dp"
-        android:text="Permudah penyebaran / pencarian kampanye kamu, dengan link yang mudah!"
+        android:maxWidth="300dp"
+        android:text="Pilih salah satu opsi dibawah ini untuk menentukan bentuk penerimaan barang, bisa dalam bentuk barang saja atau bisa juga dalam bentuk uang yang senilai dengan barang"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
-    <EditText
-        android:id="@+id/editText2"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Contoh ''Bantu Hisyam''"
         android:layout_marginTop="48dp"
-        android:textSize="14sp"
+        android:background="@drawable/line_choose"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView111" />
-    <LinearLayout
-        android:id="@+id/linearLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:text="Hanya Barang"
+            android:textColor="#367FF9"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/line_constraint"
+        android:gravity="center_horizontal"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:text="Uang dan Barang"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/editText2">
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
 
         <Button
-            android:id="@+id/buttonSebelum11"
+            android:id="@+id/buttonsebelum27"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginRight="8dp"
@@ -82,7 +119,7 @@
             android:textColor="#000" />
 
         <Button
-            android:id="@+id/buttonSelanjut11"
+            android:id="@+id/buttonselanjut27"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginLeft="8dp"
@@ -91,6 +128,7 @@
             android:text="Selanjutnya" />
 
     </LinearLayout>
+
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
@@ -102,6 +140,6 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></TextView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
