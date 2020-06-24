@@ -71,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText2">
 
         <Button
-            android:id="@+id/buttonSebelum2"
+            android:id="@+id/buttonSebelum11"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginRight="8dp"
@@ -82,7 +82,7 @@
             android:textColor="#000" />
 
         <Button
-            android:id="@+id/buttonSelanjut2"
+            android:id="@+id/buttonSelanjut11"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginLeft="8dp"

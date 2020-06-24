@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="24dp"
-    tools:context=".galang_ui.GalangAndroid10">
+    tools:context=".galang_ui.GalangAndroid32">
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5"
+            android:text="2"
             android:textColor="#000"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -26,15 +26,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" / 8" />
+            android:text=" / 10" />
     </LinearLayout>
-
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:text="Berapa Biaya yang Dibutuhkan?"
+        android:maxWidth="300dp"
+        android:text="Tentukan Link untuk Penggalangan Barang-mu!"
         android:textColor="#000"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -42,37 +42,35 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4"></TextView>
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/textView111"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
         android:layout_marginTop="8dp"
-        android:maxWidth="300dp"
-        android:text="Masukkan biaya yang kamu harapkan, semoga Sibankan bisa membantu masalah kamu dengan membantu penggalangan dana yang kamu buat!"
+        android:text="Permudah penyebaran / pencarian kampanye kamu, dengan link yang mudah!"
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/textView16"></TextView>
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Contoh ''Bantu Hisyam''"
         android:layout_marginTop="48dp"
-        android:text="Rp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView111" />
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/linearLayout5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3">
+        app:layout_constraintTop_toBottomOf="@+id/editText2">
 
         <Button
-            android:id="@+id/buttonsebelum10"
+            android:id="@+id/buttonSebelum32"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginRight="8dp"
@@ -83,13 +81,14 @@
             android:textColor="#000" />
 
         <Button
-            android:id="@+id/buttonselanjut10"
+            android:id="@+id/buttonSelanjut32"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginLeft="8dp"
             android:layout_weight="1"
             android:padding="16dp"
             android:text="Selanjutnya" />
+
     </LinearLayout>
     <TextView
         android:id="@+id/textView17"
@@ -100,8 +99,8 @@
         android:clickable="true"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
-        android:layout_marginBottom="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"></TextView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

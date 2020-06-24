@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="24dp"
-    tools:context=".galang_ui.GalangAndroid13">
+    tools:context=".galang_ui.GalangAndroid21">
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7"
+            android:text="9"
             android:textColor="#000"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" / 8" />
+            android:text=" / 10" />
     </LinearLayout>
 
     <TextView
@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:maxWidth="300dp"
-        android:text="Ceritakan tentang kampanye kamu, alasan penggalangan dana dan rencana penggunaan dana!"
+        android:text="Ceritakan tentang kampanye kamu, alasan penggalangan barang dan rencana penggunaan barang!"
         android:textColor="#000"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -201,7 +201,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView25">
 
         <Button
-            android:id="@+id/buttonsebelum13"
+            android:id="@+id/buttonsebelum21"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginRight="8dp"
@@ -212,7 +212,7 @@
             android:textColor="#000" />
 
         <Button
-            android:id="@+id/buttonselanjut13"
+            android:id="@+id/buttonselanjut21"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginLeft="8dp"
@@ -233,4 +233,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></TextView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

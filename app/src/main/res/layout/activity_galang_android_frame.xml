@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="24dp"
-    tools:context=".galang_ui.GalangAndroid10">
+    tools:context=".galang_ui.GalangAndroidFrame">
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
@@ -18,7 +18,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5"
+            android:text="7"
             android:textColor="#000"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -26,53 +26,55 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" / 8" />
+            android:text=" / 10" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
-        android:text="Berapa Biaya yang Dibutuhkan?"
+        android:text="Alamat Pengiriman Barang Kamu."
         android:textColor="#000"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
 
     <TextView
-        android:id="@+id/textView21"
+        android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:maxWidth="300dp"
-        android:text="Masukkan biaya yang kamu harapkan, semoga Sibankan bisa membantu masalah kamu dengan membantu penggalangan dana yang kamu buat!"
+        android:text="Masukkan alamat pengiriman barang ke tempat barang itu dibutuhkan, ini akan mempermudah donatur untuk mengirimkan barangnya."
         android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editText6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Rp"
+        android:layout_marginTop="73dp"
+        android:textColorHint="#000"
+        android:hint="Contoh “Perumahan Sindang Asri no 34 RT 0...”"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="54dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText3">
+        app:layout_constraintTop_toBottomOf="@+id/editText6">
 
         <Button
-            android:id="@+id/buttonsebelum10"
+            android:id="@+id/buttonsebelumframe"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginRight="8dp"
@@ -83,14 +85,16 @@
             android:textColor="#000" />
 
         <Button
-            android:id="@+id/buttonselanjut10"
+            android:id="@+id/buttonselanjutframe"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginLeft="8dp"
             android:layout_weight="1"
             android:padding="16dp"
             android:text="Selanjutnya" />
+
     </LinearLayout>
+
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
@@ -100,8 +104,8 @@
         android:clickable="true"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
-        android:layout_marginBottom="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></TextView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
