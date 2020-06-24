@@ -5,40 +5,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="24dp"
-    tools:context=".galang_ui.GalangAndroid9">
-
-    <TextView
-        android:id="@+id/textView1000"
+    tools:context=".galang_ui.GalangAndroid20">
+    <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hai, Sahabat Pendidikan!"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:layout_marginTop="96dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mau membuat kampanye ya, beri judul yang sesuai untuk penggalangan donasi kamu ya..."
-        android:textSize="12sp"
         android:layout_marginTop="8dp"
-        android:layout_marginLeft="1dp"
+        android:orientation="horizontal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView1000"></TextView>
+        app:layout_constraintTop_toTopOf="parent">
 
-    <EditText
-        android:id="@+id/editText"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / 10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Durasi Penggalangan Barangmu"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"></TextView>
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxWidth="320dp"
+        android:text="Berapa lama waktu untuk penggalangan barang agar dapat mencapai target biaya yang dibutuhkan?"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"></TextView>
+
+    <Spinner
+        android:id="@+id/spinner2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Contoh ''Bantu Hisyam Melanjutkan Pendidikan''"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        android:layout_marginTop="65dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -46,10 +65,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:orientation="horizontal"
-        app:layout_constraintTop_toBottomOf="@+id/editText">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2">
 
         <Button
-            android:id="@+id/buttonsebelum9"
+            android:id="@+id/buttonsebelum20"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginRight="8dp"
@@ -60,16 +80,14 @@
             android:textColor="#000" />
 
         <Button
-            android:id="@+id/buttonselanjut9"
+            android:id="@+id/buttonselanjut20"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginLeft="8dp"
             android:layout_weight="1"
             android:padding="16dp"
             android:text="Selanjutnya" />
-
     </LinearLayout>
-
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
@@ -79,6 +97,7 @@
         android:clickable="true"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
+        android:layout_marginBottom="26dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></TextView>

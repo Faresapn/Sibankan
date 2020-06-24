@@ -5,7 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="24dp"
-    tools:context=".galang_ui.GalangAndroid9">
+    tools:context=".galang_ui.GalangAndroid31">
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / 10" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView1000"
@@ -14,10 +36,10 @@
         android:text="Hai, Sahabat Pendidikan!"
         android:textColor="#000000"
         android:textSize="18sp"
-        android:layout_marginTop="96dp"
         android:textStyle="bold"
+        android:layout_marginTop="72dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></TextView>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4"></TextView>
 
     <TextView
         android:id="@+id/textView11"
@@ -49,7 +71,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText">
 
         <Button
-            android:id="@+id/buttonsebelum9"
+            android:id="@+id/buttonsebelum31"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginRight="8dp"
@@ -60,7 +82,7 @@
             android:textColor="#000" />
 
         <Button
-            android:id="@+id/buttonselanjut9"
+            android:id="@+id/buttonselanjut31"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_marginLeft="8dp"
