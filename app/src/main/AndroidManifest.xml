@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".galang_ui.GalangAndroid22"></activity>
+        <activity android:name=".ProgresActivity"></activity>
+        <activity android:name=".galang_ui.GalangAndroid22" />
         <activity android:name=".galang_ui.GalangAndroid21" />
         <activity android:name=".galang_ui.GalangAndroid20" />
         <activity android:name=".galang_ui.GalangAndroidFrame" />
@@ -30,7 +31,7 @@
         <activity android:name=".galang_ui.GalangAndroid9" />
         <activity android:name=".galang_ui.GalangHalaman2" />
         <activity android:name=".galang_ui.GalangHalaman1" />
-        <activity android:name=".galang_ui.GalangActivity"/>
+        <activity android:name=".galang_ui.GalangActivity" />
         <activity
             android:name=".HomeActivity"
             android:label="@string/app_name"

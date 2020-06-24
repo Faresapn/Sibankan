@@ -1,21 +1,20 @@
 package com.distancing.sibankan.ui;
 
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.distancing.sibankan.ProgresActivity;
 import com.distancing.sibankan.R;
 import com.distancing.sibankan.adapter.HorizontalMainAdapter;
 import com.distancing.sibankan.adapter.VerticalMainAdapter;
@@ -35,6 +34,7 @@ public class HomeFragment extends Fragment {
     HorizontalMainAdapter adapterhori;
     RecyclerView rv,rvhori;
     LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
+    CardView satu,dua,tiga,empat;
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
@@ -42,6 +42,8 @@ public class HomeFragment extends Fragment {
         ((AppCompatActivity) getActivity()).getSupportActionBar().hide();
         rv = root.findViewById(R.id.rv_verti);
         rvhori = root.findViewById(R.id.rv_hori);
+
+
         RVVERTI();
         RVHORI();
         return root;
