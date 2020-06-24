@@ -39,4 +39,10 @@
         <item>8</item>
         <item>16</item>
     </string-array>
+    <string-array name="sisa_waktu_hori">
+        <item>13 hari</item>
+        <item>4 hari</item>
+        <item>8 hari</item>
+        <item>16 hari</item>
+    </string-array>
 </resources>

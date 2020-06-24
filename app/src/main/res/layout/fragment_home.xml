@@ -349,12 +349,15 @@
                     android:layout_weight="1"
                     android:text="Lihat Semua" />
             </LinearLayout>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
-                tools:listitem="@layout/items_donasi_horizontal"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_hori"
+                tools:listitem="@layout/items_donasi_horizontal">
 
             </androidx.recyclerview.widget.RecyclerView>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -372,7 +375,8 @@
             </LinearLayout>
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
-                tools:listitem="@layout/items_donasi_horizontal"
+                android:id="@+id/rv_verti"
+                tools:listitem="@layout/items_donasi_vertical"
                 android:layout_height="wrap_content">
 
             </androidx.recyclerview.widget.RecyclerView>
@@ -380,6 +384,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:textColor="#fff"
+                android:layout_margin="20dp"
                 android:text="Lihat Semua">
 
             </Button>
