@@ -11,9 +11,11 @@ import android.text.Spanned;
 import android.text.style.StyleSpan;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.distancing.sibankan.R;
+import com.distancing.sibankan.data.GalangDanaHori;
 
 import org.w3c.dom.Text;
 
@@ -26,11 +28,20 @@ public class GalangHalaman1 extends AppCompatActivity {
     private TextView textblue;
     private String colorBlue = "<font color='#367FF9'>";
     private String colorCodeEnd = "</font>";
+    ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_galang_halaman1);
+        imageView = findViewById(R.id.imageView10);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GalangHalaman1.this,GalangActivity.class);
+                startActivity(intent);
+            }
+        });
         textview = findViewById(R.id.textviewfiktif);
         String text = "Galang donasi fiktif atau main-main";
         SpannableString ss = new SpannableString(text);
